@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "05049a61e15e4c29b8cd9b7a",
+      "kind": "policyassignments",
+      "apiVersion": "2022-06-01",
+      "location": "global",
+      "properties": {
+        "description": "Allowed locations for resources",
+        "displayName": "Allowed locations for resources",
+        "enforcementMode": "Default",
+        "metadata": {
+          "parameterScopes": {
+            "listOfAllowedLocations": "/providers/Microsoft.Management/managementGroups/MISZEL"
+          }
+        },
+        "nonComplianceMessages": [
+          {
+            "message": "This region is not applicable"
+          }
+        ],
+        "notScopes": [
+          "/providers/Microsoft.Management/managementGroups/Development"
+        ],
+        "overrides": [],
+        "parameters": {
+          "listOfAllowedLocations": {
+            "value": [
+              "westeurope",
+              "global",
+              "northeurope"
+            ]
+          }
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+        "resourceSelectors": [],
+        "scope": "/providers/Microsoft.Management/managementGroups/MISZEL"
+      }
+    }
+  ],
+  "outputs": {}
+}

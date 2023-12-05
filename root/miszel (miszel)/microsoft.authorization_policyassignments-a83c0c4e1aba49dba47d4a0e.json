@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "a83c0c4e1aba49dba47d4a0e",
+      "kind": "policyassignments",
+      "apiVersion": "2022-06-01",
+      "location": "global",
+      "properties": {
+        "displayName": "Storage accounts should be limited by allowed SKUs",
+        "enforcementMode": "Default",
+        "metadata": {
+          "parameterScopes": {
+            "listOfAllowedSKUs": "/providers/Microsoft.Management/managementGroups/MISZEL"
+          }
+        },
+        "nonComplianceMessages": [
+          {
+            "message": "Storage account SKU not allowed"
+          }
+        ],
+        "notScopes": [
+          "/providers/Microsoft.Management/managementGroups/Development"
+        ],
+        "overrides": [],
+        "parameters": {
+          "listOfAllowedSKUs": {
+            "value": [
+              "standard_lrs",
+              "standard_grs"
+            ]
+          }
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7433c107-6db4-4ad1-b57a-a76dce0154a1",
+        "resourceSelectors": [],
+        "scope": "/providers/Microsoft.Management/managementGroups/MISZEL"
+      }
+    }
+  ],
+  "outputs": {}
+}
