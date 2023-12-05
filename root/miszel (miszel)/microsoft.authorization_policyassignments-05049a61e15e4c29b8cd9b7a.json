@@ -37,7 +37,8 @@
           "listOfAllowedLocations": {
             "value": [
               "westeurope",
-              "global"
+              "global",
+              "northeurope"
             ]
           }
         },
