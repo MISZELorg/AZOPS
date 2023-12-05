@@ -13,7 +13,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "b7da6c62ebfe4781b6ba9f60",
       "kind": "policyassignments",
-      "apiVersion": "2022-06-01",
+      "apiVersion": "2023-04-01",
       "location": "global",
       "properties": {
         "displayName": "test",
