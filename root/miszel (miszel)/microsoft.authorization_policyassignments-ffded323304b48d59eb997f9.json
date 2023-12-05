@@ -13,7 +13,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "ffded323304b48d59eb997f9",
       "kind": "policyassignments",
-      "apiVersion": "2022-06-01",
+      "apiVersion": "2023-04-01",
       "location": "global",
       "properties": {
         "displayName": "Key vaults should have soft delete enabled",
