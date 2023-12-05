@@ -62,7 +62,7 @@ jobs:
     # https://github.com/azure/azops/wiki/oidc
     #
 
-    # environment: prod 
+    environment: prod 
 
     steps:
 
