@@ -13,7 +13,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "e3fd71cf641d4e43aaa8af81",
       "kind": "policyassignments",
-      "apiVersion": "2023-04-01",
+      "apiVersion": "2022-06-01",
       "location": "global",
       "properties": {
         "displayName": "Key vaults should have deletion protection enabled",

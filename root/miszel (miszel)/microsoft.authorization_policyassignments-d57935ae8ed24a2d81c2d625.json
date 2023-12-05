@@ -13,7 +13,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "d57935ae8ed24a2d81c2d625",
       "kind": "policyassignments",
-      "apiVersion": "2023-04-01",
+      "apiVersion": "2022-06-01",
       "location": "global",
       "properties": {
         "displayName": "App Service app slots should require FTPS only",
