@@ -138,7 +138,7 @@ jobs:
     # https://github.com/azure/azops/wiki/oidc
     #
 
-    # environment: prod 
+    environment: prod 
 
     #
     # Only run Pull after successful Push or on manually triggered/scheduled events
