@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "name": "eb54b028-bf0c-8298-8522-92714d765e92",
+      "apiVersion": "2022-04-01",
+      "properties": {
+        "principalId": "043e9b6d-7738-44d8-ba8c-cb2153c882a9",
+        "principalType": "ServicePrincipal",
+        "roleDefinitionId": "/subscriptions/c1f92950-b4e8-4649-ba40-87c335e300fd/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+        "scope": "/subscriptions/c1f92950-b4e8-4649-ba40-87c335e300fd/resourceGroups/WIFdemo-131123-prod"
+      }
+    }
+  ],
+  "outputs": {}
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "fdf2b159bab94911932e018b",
+      "kind": "policyassignments",
+      "apiVersion": "2022-06-01",
+      "location": "global",
+      "properties": {
+        "displayName": "test2",
+        "enforcementMode": "Default",
+        "metadata": {
+          "parameterScopes": {}
+        },
+        "nonComplianceMessages": [
+          {
+            "message": "source tag missing or incorrect value"
+          }
+        ],
+        "notScopes": [],
+        "overrides": [],
+        "parameters": {
+          "listofallowedtagValues": {
+            "value": [
+              "GHA",
+              "ADO",
+              "clickops"
+            ]
+          }
+        },
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/MISZEL/providers/Microsoft.Authorization/policyDefinitions/cdc41ea7-478c-4694-862e-d42e71ff480a",
+        "resourceSelectors": [],
+        "scope": "/providers/Microsoft.Management/managementGroups/MISZEL"
+      }
+    }
+  ],
+  "outputs": {}
+}

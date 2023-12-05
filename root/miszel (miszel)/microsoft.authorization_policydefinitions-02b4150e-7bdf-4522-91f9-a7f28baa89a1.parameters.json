@@ -1,0 +1,74 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "kind": "policydefinitions",
+        "location": "global",
+        "name": "02b4150e-7bdf-4522-91f9-a7f28baa89a1",
+        "properties": {
+          "displayName": "test",
+          "metadata": {
+            "category": "Miszele_custom_policies"
+          },
+          "mode": "All",
+          "parameters": {
+            "effect": {
+              "allowedValues": [
+                "Audit",
+                "Deny",
+                "Disabled"
+              ],
+              "defaultValue": "Deny",
+              "metadata": {
+                "description": "Enable or disable the execution of the audit policy",
+                "displayName": "Effect"
+              },
+              "type": "String"
+            },
+            "listofallowedtagValues": {
+              "allowedValues": [
+                "dev",
+                "prod"
+              ],
+              "metadata": {
+                "description": "Value of the tag, such as 'production'",
+                "displayName": "Tag Values"
+              },
+              "type": "Array"
+            },
+            "tagName": {
+              "defaultValue": "env",
+              "metadata": {
+                "description": "Name of the tag, such as 'environment'",
+                "displayName": "Tag Name"
+              },
+              "type": "String"
+            }
+          },
+          "policyRule": {
+            "if": {
+              "allOf": [
+                {
+                  "equals": "Microsoft.Resources/subscriptions/resourceGroups",
+                  "field": "type"
+                },
+                {
+                  "not": {
+                    "field": "[concat('tags[', parameters('tagName'), ']')]",
+                    "in": "[parameters('listofallowedtagValues')]"
+                  }
+                }
+              ]
+            },
+            "then": {
+              "effect": "[parameters('effect')]"
+            }
+          }
+        },
+        "type": "Microsoft.Authorization/policyDefinitions"
+      }
+    }
+  }
+}

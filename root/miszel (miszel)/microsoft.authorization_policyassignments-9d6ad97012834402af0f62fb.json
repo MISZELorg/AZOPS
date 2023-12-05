@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "9d6ad97012834402af0f62fb",
+      "kind": "policyassignments",
+      "apiVersion": "2022-06-01",
+      "location": "global",
+      "properties": {
+        "displayName": "Network interfaces should not have public IPs",
+        "enforcementMode": "Default",
+        "metadata": {
+          "parameterScopes": {}
+        },
+        "nonComplianceMessages": [],
+        "notScopes": [
+          "/subscriptions/39ed5791-2771-4259-984c-e2c3c59e2d96/resourceGroups/photoVM-RG"
+        ],
+        "overrides": [],
+        "parameters": {},
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83a86a26-fd1f-447c-b59d-e51f44264114",
+        "resourceSelectors": [],
+        "scope": "/providers/Microsoft.Management/managementGroups/MISZEL"
+      }
+    }
+  ],
+  "outputs": {}
+}

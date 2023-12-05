@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Resources/resourceGroups",
+      "name": "Hub-RG",
+      "apiVersion": "2023-07-01-preview",
+      "location": "westeurope",
+      "tags": {
+        "app": "networking",
+        "env": "prod",
+        "source": "clickops",
+        "tech owner": "kmiszel"
+      },
+      "properties": {}
+    }
+  ],
+  "outputs": {}
+}

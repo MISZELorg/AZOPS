@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "kind": "policydefinitions",
+        "location": "global",
+        "name": "281315ec-c903-4caf-83b4-90a602543ca0",
+        "properties": {
+          "displayName": "Allowed locations",
+          "metadata": {
+            "category": "Miszele_custom_policies"
+          },
+          "mode": "All",
+          "parameters": {
+            "allowedLocations": {
+              "metadata": {
+                "description": "The list of allowed locations for resources.",
+                "displayName": "Allowed locations",
+                "strongType": "location"
+              },
+              "type": "Array"
+            }
+          },
+          "policyRule": {
+            "if": {
+              "not": {
+                "field": "location",
+                "in": "[parameters('allowedLocations')]"
+              }
+            },
+            "then": {
+              "effect": "audit"
+            }
+          }
+        },
+        "type": "Microsoft.Authorization/policyDefinitions"
+      }
+    }
+  }
+}

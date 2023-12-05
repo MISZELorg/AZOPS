@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "bcedea6fcaa04046b5da9435",
+      "kind": "policyassignments",
+      "apiVersion": "2022-06-01",
+      "location": "westeurope",
+      "identity": {
+        "principalId": "1ec0a0f6-e351-4084-a5ba-27486deb1931",
+        "tenantId": "48c383d8-47c5-48f9-9e8b-afe4f2519054",
+        "type": "SystemAssigned"
+      },
+      "properties": {
+        "description": "Inherit tech owner tag from RG",
+        "displayName": "Inherit tech owner tag from RG",
+        "enforcementMode": "Default",
+        "metadata": {
+          "parameterScopes": {}
+        },
+        "nonComplianceMessages": [
+          {
+            "message": "missing tag: tech owner"
+          }
+        ],
+        "notScopes": [
+          "/providers/Microsoft.Management/managementGroups/Development"
+        ],
+        "overrides": [],
+        "parameters": {
+          "tagName": {
+            "value": "tech owner"
+          }
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd3aa116-8754-49c9-a813-ad46512ece54",
+        "resourceSelectors": [],
+        "scope": "/providers/Microsoft.Management/managementGroups/MISZEL"
+      }
+    }
+  ],
+  "outputs": {}
+}

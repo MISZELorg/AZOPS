@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "23cf8a13c3fe4e9da7cb2453",
+      "kind": "policyassignments",
+      "apiVersion": "2022-06-01",
+      "location": "westeurope",
+      "identity": {
+        "principalId": "73677048-3c28-4619-aec7-54609b80688b",
+        "tenantId": "48c383d8-47c5-48f9-9e8b-afe4f2519054",
+        "type": "SystemAssigned"
+      },
+      "properties": {
+        "displayName": "[Preview]: Configure periodic checking for missing system updates on azure Arc-enabled servers",
+        "enforcementMode": "Default",
+        "metadata": {
+          "parameterScopes": {
+            "locations": "/subscriptions/8a8b918e-69da-4a82-8318-d21cfdc65d83"
+          }
+        },
+        "nonComplianceMessages": [
+          {
+            "message": "fesgrsregsergwfrwrrfs"
+          }
+        ],
+        "notScopes": [],
+        "overrides": [],
+        "parameters": {},
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bfea026e-043f-4ff4-9d1b-bf301ca7ff46",
+        "resourceSelectors": [],
+        "scope": "/subscriptions/8a8b918e-69da-4a82-8318-d21cfdc65d83"
+      }
+    }
+  ],
+  "outputs": {}
+}

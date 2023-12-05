@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "bca564b9fc8e4f76b980c567",
+      "kind": "policyassignments",
+      "apiVersion": "2022-06-01",
+      "location": "global",
+      "properties": {
+        "displayName": "Require app tag on RG",
+        "enforcementMode": "Default",
+        "metadata": {
+          "parameterScopes": {}
+        },
+        "nonComplianceMessages": [
+          {
+            "message": "missing tag: app"
+          }
+        ],
+        "notScopes": [
+          "/providers/Microsoft.Management/managementGroups/Development"
+        ],
+        "overrides": [],
+        "parameters": {
+          "tagName": {
+            "value": "app"
+          }
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/96670d01-0a4d-4649-9c89-2d3abc0a5025",
+        "resourceSelectors": [],
+        "scope": "/providers/Microsoft.Management/managementGroups/MISZEL"
+      }
+    }
+  ],
+  "outputs": {}
+}

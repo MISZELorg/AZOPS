@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "9b609439e5084baea238315a",
+      "kind": "policyassignments",
+      "apiVersion": "2022-06-01",
+      "location": "westeurope",
+      "identity": {
+        "principalId": "cd229a0e-8189-4173-b7e4-745e1453c192",
+        "tenantId": "48c383d8-47c5-48f9-9e8b-afe4f2519054",
+        "type": "SystemAssigned"
+      },
+      "properties": {
+        "description": "Inherit source tag from RG",
+        "displayName": "Inherit source tag from RG",
+        "enforcementMode": "Default",
+        "metadata": {
+          "parameterScopes": {}
+        },
+        "nonComplianceMessages": [
+          {
+            "message": "missing tag: source"
+          }
+        ],
+        "notScopes": [
+          "/providers/Microsoft.Management/managementGroups/Development"
+        ],
+        "overrides": [],
+        "parameters": {
+          "tagName": {
+            "value": "source"
+          }
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd3aa116-8754-49c9-a813-ad46512ece54",
+        "resourceSelectors": [],
+        "scope": "/providers/Microsoft.Management/managementGroups/MISZEL"
+      }
+    }
+  ],
+  "outputs": {}
+}
