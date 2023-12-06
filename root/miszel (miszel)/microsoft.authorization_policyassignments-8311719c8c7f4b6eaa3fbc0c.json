@@ -13,7 +13,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "8311719c8c7f4b6eaa3fbc0c",
       "kind": "policyassignments",
-      "apiVersion": "2022-06-01",
+      "apiVersion": "2023-04-01",
       "location": "global",
       "properties": {
         "displayName": "Require tech owner tag on RG",
