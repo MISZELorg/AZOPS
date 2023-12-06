@@ -13,7 +13,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "9b609439e5084baea238315a",
       "kind": "policyassignments",
-      "apiVersion": "2023-04-01",
+      "apiVersion": "2022-06-01",
       "location": "westeurope",
       "identity": {
         "principalId": "cd229a0e-8189-4173-b7e4-745e1453c192",
