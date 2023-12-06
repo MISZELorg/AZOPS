@@ -13,7 +13,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "ASB",
       "kind": "policyassignments",
-      "apiVersion": "2023-04-01",
+      "apiVersion": "2022-06-01",
       "location": "global",
       "properties": {
         "displayName": "Azure Security Benchmark",
