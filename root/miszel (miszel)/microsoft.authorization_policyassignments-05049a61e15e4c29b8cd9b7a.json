@@ -13,7 +13,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "05049a61e15e4c29b8cd9b7a",
       "kind": "policyassignments",
-      "apiVersion": "2022-06-01",
+      "apiVersion": "2023-04-01",
       "location": "global",
       "properties": {
         "description": "Allowed locations for resources",
