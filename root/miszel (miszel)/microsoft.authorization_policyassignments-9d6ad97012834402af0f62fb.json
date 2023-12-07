@@ -13,7 +13,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "9d6ad97012834402af0f62fb",
       "kind": "policyassignments",
-      "apiVersion": "2022-06-01",
+      "apiVersion": "2023-04-01",
       "location": "global",
       "properties": {
         "displayName": "Network interfaces should not have public IPs",
