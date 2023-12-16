@@ -16,8 +16,7 @@
       "properties": {
         "assignableScopes": [
           "/providers/Microsoft.Management/managementGroups/MISZEL",
-          "/subscriptions/39ed5791-2771-4259-984c-e2c3c59e2d96",
-          "/subscriptions/a767261b-2339-4490-a955-e12bcdce57aa"
+          "/subscriptions/39ed5791-2771-4259-984c-e2c3c59e2d96"
         ],
         "permissions": [
           {
