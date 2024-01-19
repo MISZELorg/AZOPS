@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.Resources/resourceGroups",
       "name": "WIFdemo-131123-test",
-      "apiVersion": "2023-07-01-preview",
+      "apiVersion": "2023-07-01",
       "location": "uksouth",
       "tags": {},
       "properties": {}

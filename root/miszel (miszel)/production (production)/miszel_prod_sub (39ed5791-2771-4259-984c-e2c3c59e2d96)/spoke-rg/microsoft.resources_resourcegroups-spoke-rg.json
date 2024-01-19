@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.Resources/resourceGroups",
       "name": "Spoke-RG",
-      "apiVersion": "2023-07-01-preview",
+      "apiVersion": "2023-07-01",
       "location": "northeurope",
       "tags": {
         "app": "networking",

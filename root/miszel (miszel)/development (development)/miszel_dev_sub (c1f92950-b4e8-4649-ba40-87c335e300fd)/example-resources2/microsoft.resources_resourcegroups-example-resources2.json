@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.Resources/resourceGroups",
       "name": "example-resources2",
-      "apiVersion": "2023-07-01-preview",
+      "apiVersion": "2023-07-01",
       "location": "westeurope",
       "tags": {},
       "properties": {}
