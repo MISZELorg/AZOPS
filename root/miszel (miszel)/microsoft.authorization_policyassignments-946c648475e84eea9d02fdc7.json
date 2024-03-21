@@ -21,6 +21,7 @@
         "type": "SystemAssigned"
       },
       "properties": {
+        "definitionVersion": "1.*.*",
         "description": "Inherit app tag from RG",
         "displayName": "Inherit app tag from RG",
         "enforcementMode": "Default",

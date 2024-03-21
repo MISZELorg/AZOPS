@@ -16,6 +16,7 @@
       "apiVersion": "2023-04-01",
       "location": "global",
       "properties": {
+        "definitionVersion": "1.*.*",
         "displayName": "Require tech owner tag on RG",
         "enforcementMode": "Default",
         "metadata": {

@@ -21,6 +21,7 @@
         "type": "SystemAssigned"
       },
       "properties": {
+        "definitionVersion": "2.*.*-preview",
         "displayName": "[Preview]: Configure periodic checking for missing system updates on azure Arc-enabled servers",
         "enforcementMode": "Default",
         "metadata": {
