@@ -33,11 +33,7 @@
             "then": {
               "effect": "audit"
             }
-          },
-          "version": "1.0.0",
-          "versions": [
-            "1.0.0"
-          ]
+          }
         },
         "type": "Microsoft.Authorization/policyDefinitions"
       }
