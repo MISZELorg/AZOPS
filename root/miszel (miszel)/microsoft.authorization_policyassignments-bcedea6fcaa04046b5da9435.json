@@ -21,7 +21,6 @@
         "type": "SystemAssigned"
       },
       "properties": {
-        "definitionVersion": "1.*.*",
         "description": "Inherit tech owner tag from RG",
         "displayName": "Inherit tech owner tag from RG",
         "enforcementMode": "Default",

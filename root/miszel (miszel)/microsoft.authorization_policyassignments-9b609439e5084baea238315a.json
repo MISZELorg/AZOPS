@@ -21,7 +21,6 @@
         "type": "SystemAssigned"
       },
       "properties": {
-        "definitionVersion": "1.*.*",
         "description": "Inherit source tag from RG",
         "displayName": "Inherit source tag from RG",
         "enforcementMode": "Default",

@@ -21,7 +21,6 @@
         "type": "SystemAssigned"
       },
       "properties": {
-        "definitionVersion": "1.*.*",
         "description": "Inherit env tag from RG",
         "displayName": "Inherit env tag from RG",
         "enforcementMode": "Default",

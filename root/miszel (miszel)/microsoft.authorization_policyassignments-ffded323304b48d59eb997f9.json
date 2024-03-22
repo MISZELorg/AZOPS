@@ -16,7 +16,6 @@
       "apiVersion": "2023-04-01",
       "location": "global",
       "properties": {
-        "definitionVersion": "3.*.*",
         "displayName": "Key vaults should have soft delete enabled",
         "enforcementMode": "Default",
         "metadata": {

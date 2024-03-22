@@ -16,7 +16,6 @@
       "apiVersion": "2023-04-01",
       "location": "global",
       "properties": {
-        "definitionVersion": "1.*.*",
         "description": "Allowed locations for resources",
         "displayName": "Allowed locations for resources",
         "enforcementMode": "Default",
