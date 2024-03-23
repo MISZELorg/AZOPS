@@ -16,6 +16,7 @@
       "apiVersion": "2023-04-01",
       "location": "global",
       "properties": {
+        "definitionVersion": "2.*.*",
         "displayName": "Key vaults should have deletion protection enabled",
         "enforcementMode": "Default",
         "metadata": {
